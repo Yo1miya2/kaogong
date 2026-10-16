@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>申论 · 练习</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .sl-wrap { display: flex; min-height: 100vh; }
+    .sl-side { width: 260px; flex: 0 0 260px; background: var(--ink); color: #e9e2d4; padding: 18px 14px; height: 100vh; overflow-y: auto; position: sticky; top: 0; }
+    .sl-side h2 { font-family: var(--display); font-size: 15px; margin: 16px 6px 8px; color: #fff; letter-spacing: .08em; }
+    .sl-side h2:first-child { margin-top: 0; }
+    .sl-item { display: block; width: 100%; text-align: left; background: none; border: none; color: #d8cfbf; padding: 7px 10px; font-size: 13px; border-radius: 6px; cursor: pointer; font-family: var(--body); }
+    .sl-item:hover { background: rgba(255,255,255,.06); color: #fff; }
+    .sl-item.on { background: rgba(255,255,255,.12); color: #fff; }
+    .sl-content { flex: 1; min-width: 0; padding: 30px 40px 90px; }
+    .sl-title { font-family: var(--display); font-size: 26px; margin: 0 0 4px; }
+    .sl-meta { color: var(--muted); font-size: 13px; margin-bottom: 20px; }
+    .sl-q { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px; margin-bottom: 18px; }
+    .sl-q h3 { font-family: var(--display); font-size: 16px; margin: 0 0 10px; }
+    .sl-q .qt { white-space: pre-wrap; font-size: 15px; margin: 0 0 12px; }
+    .sl-q textarea { width: 100%; min-height: 140px; padding: 10px 12px; border: 1px solid var(--line-strong); border-radius: 6px; font-size: 14px; font-family: var(--body); line-height: 1.8; background: #fffdf7; resize: vertical; }
+    .sl-q .done-row { display: flex; align-items: center; gap: 8px; margin-top: 10px; font-size: 13px; color: var(--muted); }
+    .sl-back { color: #d8cfbf; text-decoration: none; font-size: 13px; display: inline-block; margin-bottom: 12px; }
+    .sl-back:hover { color: #fff; }
+    @media (max-width: 860px) {
+      .sl-wrap { flex-direction: column; }
+      .sl-side { width: 100%; height: auto; position: static; max-height: 40vh; }
+      .sl-content { padding: 20px 16px 70px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="sl-wrap">
+    <aside class="sl-side">
+      <a class="sl-back" href="index.html">← 回行测</a>
+      <div id="sl-list"></div>
+    </aside>
+    <main class="sl-content" id="sl-main"></main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="shenlun.js"></script>
+  <script src="shenlun-app.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>考公刷题 · 行测练习</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">公</div>
+        <div class="brand-text">
+          <div class="brand-title">考公刷题</div>
+          <div class="brand-sub">行测 · 国考省考</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-item is-active" data-view="dashboard">
+          <span class="nav-ico">◈</span><span>仪表盘</span>
+        </button>
+        <button class="nav-item" data-view="practice">
+          <span class="nav-ico">✎</span><span>专项刷题</span>
+        </button>
+        <button class="nav-item" data-view="exam">
+          <span class="nav-ico">▣</span><span>模拟考试</span>
+        </button>
+        <button class="nav-item" id="nav-shenlun">
+          <span class="nav-ico">文</span><span>申论练习</span>
+        </button>
+        <button class="nav-item" data-view="wrong">
+          <span class="nav-ico">✕</span><span>错题本</span>
+        </button>
+        <button class="nav-item" data-view="fav">
+          <span class="nav-ico">★</span><span>收藏</span>
+        </button>
+        <button class="nav-item" data-view="stats">
+          <span class="nav-ico">⌁</span><span>统计</span>
+        </button>
+        <button class="nav-item" data-view="settings">
+          <span class="nav-ico">⚙</span><span>设置</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="countdown-mini" id="side-countdown">国考 —</div>
+      </div>
+    </aside>
+
+    <main class="main" id="main"></main>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
